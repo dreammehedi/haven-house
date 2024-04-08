@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* adding custom style */
+button,
+a {
+  @apply transition-all duration-200 ease-linear;
+}
