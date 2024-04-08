@@ -4,7 +4,7 @@
       "id": 1,
       "segment_name": "Apartment",
       "estate_title": "Modern Apartment in Downtown",
-      "image": "apartment1.jpg",
+      "image": "https://i.ibb.co/rxKgs98/apartment1.png",
       "description": "Beautiful modern apartment located in the heart of downtown. Spacious living room, fully equipped kitchen, and stunning city views.",
       "price": "$500,000",
       "status": "sale",
@@ -15,16 +15,17 @@
         "Fully equipped kitchen",
         "City views"
       ],
-      "button_text": "View Property"
+      "bedrooms": 2,
+      "bathrooms": 2
     },
     {
       "id": 2,
       "segment_name": "House",
       "estate_title": "Cozy Family Home in Suburbia",
-      "image": "house1.jpg",
+      "image": "",
       "description": "Charming family home located in a quiet suburban neighborhood. Large backyard, perfect for kids and pets. Close to schools and parks.",
       "price": "$350,000",
-      "status": "sale",
+      "status": "rent",
       "area": "2000 sq ft",
       "location": "Suburbia, City",
       "facilities": [
@@ -32,13 +33,14 @@
         "Close to schools",
         "Quiet neighborhood"
       ],
-      "button_text": "View Property"
+      "bedrooms": 3,
+      "bathrooms": 2
     },
     {
       "id": 3,
       "segment_name": "Condo",
       "estate_title": "Luxury Condo with Ocean View",
-      "image": "condo1.jpg",
+      "image": "https://i.ibb.co/kxNPm5b/condo1.png",
       "description": "Luxurious condo with breathtaking ocean views. High-end finishes, resort-style amenities, and convenient location near beaches and restaurants.",
       "price": "$800,000",
       "status": "sale",
@@ -49,29 +51,31 @@
         "Resort-style amenities",
         "Close to beaches"
       ],
-      "button_text": "View Property"
+      "bedrooms": 2,
+      "bathrooms": 2
     },
     {
       "id": 4,
       "segment_name": "Townhouse",
       "estate_title": "Townhouse with Private Garden",
-      "image": "townhouse1.jpg",
+      "image": "https://i.ibb.co/9NWNdM4/townhouse1.png",
       "description": "Spacious townhouse with a private garden oasis. Ideal for entertaining guests and outdoor relaxation. Close to shops and entertainment.",
       "price": "$450,000",
-      "status": "sale",
+      "status": "rent",
       "area": "2200 sq ft",
       "location": "Urban, City",
       "facilities": ["Private garden", "Close to shops", "Spacious layout"],
-      "button_text": "View Property"
+      "bedrooms": 3,
+      "bathrooms": 2
     },
     {
       "id": 5,
       "segment_name": "Villa",
       "estate_title": "Mountain View Villa",
-      "image": "villa1.jpg",
+      "image": "https://i.ibb.co/brMWxkp/villa1.png",
       "description": "Exquisite villa nestled in the mountains with panoramic views. Elegant design, luxurious amenities, and serene surroundings.",
       "price": "$1,200,000",
-      "status": "sale",
+      "status": "rent",
       "area": "3000 sq ft",
       "location": "Mountainside, City",
       "facilities": [
@@ -79,13 +83,14 @@
         "Luxurious amenities",
         "Serene surroundings"
       ],
-      "button_text": "View Property"
+      "bedrooms": 4,
+      "bathrooms": 3
     },
     {
       "id": 6,
       "segment_name": "Lakehouse",
       "estate_title": "Lakefront Retreat",
-      "image": "lakefront1.jpg",
+      "image": "https://i.ibb.co/nbLNBrG/lakafront1.png",
       "description": "Tranquil lakefront property offering a peaceful retreat. Spacious interiors, private dock, and breathtaking lake views.",
       "price": "$900,000",
       "status": "sale",
@@ -96,26 +101,28 @@
         "Breathtaking lake views",
         "Tranquil surroundings"
       ],
-      "button_text": "View Property"
+      "bedrooms": 3,
+      "bathrooms": 3
     },
     {
       "id": 7,
       "segment_name": "Cottage",
       "estate_title": "Country Cottage with Garden",
-      "image": "cottage1.jpg",
+      "image": "https://i.ibb.co/kcWtRqw/cottage1.png",
       "description": "Quaint country cottage surrounded by lush gardens. Perfect for nature lovers seeking peace and tranquility.",
       "price": "$300,000",
-      "status": "sale",
+      "status": "rent",
       "area": "1200 sq ft",
       "location": "Countryside, City",
       "facilities": ["Lush gardens", "Peaceful surroundings", "Quaint charm"],
-      "button_text": "View Property"
+      "bedrooms": 2,
+      "bathrooms": 1
     },
     {
       "id": 8,
       "segment_name": "Penthouse",
       "estate_title": "Penthouse with Skyline Views",
-      "image": "penthouse1.jpg",
+      "image": "https://i.ibb.co/CsTZcpT/penthouse1.png",
       "description": "Luxurious penthouse offering breathtaking skyline views. High-end finishes, spacious layout, and exclusive amenities.",
       "price": "$1,500,000",
       "status": "sale",
@@ -126,20 +133,22 @@
         "Exclusive amenities",
         "High-end finishes"
       ],
-      "button_text": "View Property"
+      "bedrooms": 4,
+      "bathrooms": 4
     },
     {
       "id": 9,
       "segment_name": "Bungalow",
       "estate_title": "Beachfront Bungalow",
-      "image": "bungalow1.jpg",
+      "image": "https://i.ibb.co/y690c6x/bungalow1.png",
       "description": "Charming beachfront bungalow steps away from the ocean. Relaxing coastal vibes, private patio, and direct beach access.",
       "price": "$600,000",
-      "status": "sale",
+      "status": "rent",
       "area": "2000 sq ft",
       "location": "Beachfront, City",
       "facilities": ["Direct beach access", "Private patio", "Coastal vibes"],
-      "button_text": "View Property"
+      "bedrooms": 3,
+      "bathrooms": 2
     }
   ]
 }
