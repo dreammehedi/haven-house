@@ -23,7 +23,7 @@ function UserProfile({ mobileMenuActive, handleMenuActive }) {
         onClick={handleMenuActive}
         className={`${
           mobileMenuActive && "bg-green-500"
-        } text-3xl cursor-pointer ring-1 ring-green-500 rounded-md hover:bg-green-500/50 transition-all duration-300 ease-linear overflow-hidden`}
+        } lg:hidden text-3xl cursor-pointer ring-1 ring-green-500 rounded-md hover:bg-green-500/50 transition-all duration-300 ease-linear overflow-hidden`}
       >
         {mobileMenuActive ? <IoClose></IoClose> : <IoMenu></IoMenu>}
       </div>

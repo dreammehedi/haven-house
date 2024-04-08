@@ -12,9 +12,7 @@ function MenuItems({ handleMenuActive }) {
         const { id, name, path } = item;
         return (
           <li
-            onClick={() => {
-              handleMenuActive;
-            }}
+            onClick={handleMenuActive}
             key={id}
             className="font-semibold capitalize"
           >

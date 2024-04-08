@@ -11,7 +11,11 @@ export default {
       lato: ["Lato", "sans-serif"],
       nunito: ["Nunito Sans", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      height: {
+        bannerHeight: "calc(100vh - 72px)",
+      },
+    },
   },
   plugins: [],
 };
