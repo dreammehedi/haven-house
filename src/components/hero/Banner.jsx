@@ -12,13 +12,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 function Banner() {
   return (
     <>
       <Swiper
         navigation={true}
-        modules={[Navigation, Pagination]}
+        autoplay={{
+          delay: 2500,
+        }}
+        modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={30}
         pagination={{
           clickable: true,

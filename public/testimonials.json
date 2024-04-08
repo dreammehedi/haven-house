@@ -1,0 +1,44 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "author": "John Doe",
+      "position": "CEO",
+      "company": "XYZ Company",
+      "testimonial": "Working with Haven House has been an absolute pleasure. Their team demonstrated exceptional professionalism, expertise, and dedication throughout our project. Not only did they deliver results beyond our expectations, but they also provided invaluable support and guidance every step of the way. ",
+      "authorImg": "https://i.ibb.co/FmwDy3d/client1.png"
+    },
+    {
+      "id": 2,
+      "author": "Jane Smith",
+      "position": "Founder",
+      "company": "ABC Corporation",
+      "testimonial": "I can't thank Haven House enough for their outstanding service. From the initial consultation to the final implementation, their team went above and beyond to ensure our needs were met with precision and care. Their attention to detail, responsiveness, and commitment to excellence truly set them apart. ",
+      "authorImg": "https://i.ibb.co/wWgcWt3/client2.png"
+    },
+    {
+      "id": 3,
+      "author": "Rosalind Brewer",
+      "position": "Director of Operations",
+      "company": "XYZ Enterprises",
+      "testimonial": "Choosing Haven House was one of the best decisions we made for our business. Their knowledgeable staff provided invaluable insights and support, helping us navigate complex challenges with ease. Their dedication to our success and unwavering commitment to delivering results exceeded our expectations. ",
+      "authorImg": "https://i.ibb.co/WBGzFbb/client3.png"
+    },
+    {
+      "id": 4,
+      "author": "Mehedi Hassan",
+      "position": "Marketing Manager",
+      "company": "ABC Marketing Solutions",
+      "testimonial": "I've had the pleasure of collaborating with Haven House on multiple projects, and each time, they have exceeded my expectations. Their professionalism, attention to detail, and proactive approach make them stand out from the crowd. I highly recommend Haven House for anyone seeking top-notch service and results.",
+      "authorImg": "https://i.ibb.co/FmwDy3d/client1.png"
+    },
+    {
+      "id": 5,
+      "author": "Mary Barra",
+      "position": "Managing Director",
+      "company": "XYZ Investments",
+      "testimonial": "Working with Haven House has been a game-changer for our organization. Their strategic insights and innovative solutions have helped us stay ahead in a competitive market. Their commitment to excellence and customer satisfaction is commendable. ",
+      "authorImg": "https://i.ibb.co/MpJk6t6/client4.png"
+    }
+  ]
+}

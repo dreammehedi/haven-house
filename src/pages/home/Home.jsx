@@ -6,6 +6,7 @@ import { PiListChecksFill } from "react-icons/pi";
 import Estate from "../../components/estate/Estate";
 import Banner from "../../components/hero/Banner";
 import Service from "../../components/service/Service";
+import Testimonials from "../../components/testimonials/Testimonials";
 import SectionTitle from "../../shareComponents/SectionTitle";
 function Home() {
   return (
@@ -52,6 +53,20 @@ function Home() {
 
         {/* estate */}
         <Estate></Estate>
+      </section>
+
+      {/* testimonial */}
+      <section className="mt-6 md:mt-8 lg:mt-10 bg-green-50 py-8 md:py-10">
+        {/* testimonial title and description */}
+        <SectionTitle
+          title={"See What Our Clients Have to Say"}
+          description={`Welcome to our testimonials section, where we offer a comprehensive range of solutions tailored to meet your needs. From consultation to execution, our dedicated team is here to provide expertise and support every step of the way.`}
+        ></SectionTitle>
+
+        {/* testimonial slider */}
+        <div className="container">
+          <Testimonials></Testimonials>
+        </div>
       </section>
     </>
   );
