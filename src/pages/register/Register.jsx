@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../auth/AuthProvider";
 import Button from "../../shareComponents/Button";
@@ -60,7 +60,6 @@ function Register() {
       <Helmet>
         <title>Haven House | Register</title>
       </Helmet>
-      <ToastContainer></ToastContainer>
 
       <section className="container">
         <div className="container ring-1 ring-green-500/50 w-full md:max-w-md mx-auto p-8 space-y-3 rounded-3xl bg-white shadow-md my-8">
@@ -125,18 +124,6 @@ function Register() {
                 placeholder="Enter Your Password..."
                 className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
               />
-              {/* {errors.password && errors.password.type === "required" && (
-                <span>Password is required</span>
-              )}
-              {errors.password && errors.password.type === "minLength" && (
-                <span>Password must be at least 6 characters long</span>
-              )}
-              {errors.password && errors.password.type === "pattern" && (
-                <span>
-                  Password must contain at least one uppercase and one lowercase
-                  letter
-                </span>
-              )} */}
             </div>
             <Button type="submit" cls={"!mx-auto"} name="Register"></Button>
           </form>
