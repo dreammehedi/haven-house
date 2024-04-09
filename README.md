@@ -1,6 +1,7 @@
 # Haven House
 
-[Live Site](https://www.example.com)
+[Haven House Firebase](https://haven-house-c40d3.web.app/)
+[Haven House Surge](https://haven-house.surge.sh/)
 
 ## Features and Characteristics
 
@@ -16,6 +17,17 @@ The npm package used for the challenges task is :
 
 - [`React Hook Form`](https://react-hook-form.com/)
 - [`Swiper Slider`](https://swiperjs.com/)
+- [`React Leaflet`](https://react-leaflet.js.org/)
+- [`AOS`](https://www.npmjs.com/package/aos)
+
+Others npm package used for this website :
+
+- [`Firebase`](https://console.firebase.google.com/)
+- [`React Helmet Async`](https://www.npmjs.com/package/react-helmet-async)
+- [`React Hook Form`](https://react-hook-form.com/)
+- [`React Icons`](https://www.npmjs.com/package/react-icons)
+- [`React Loader Spinner`](https://www.npmjs.com/package/react-loader-spinner)
+- [`React Toastify`](https://www.npmjs.com/package/react-toastify)
 
 ## Welcome to Haven House: A Sanctuary for Hope
 

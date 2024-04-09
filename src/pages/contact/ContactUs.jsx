@@ -22,12 +22,12 @@ function ContactUs() {
       </section>
 
       {/* contact form */}
-      <section className="my-6 md:my-8 lg:my-10 bg-green-50">
+      <section className="mt-6 mt:my-8 lg:mt-10 bg-green-50">
         <ContactForm></ContactForm>
       </section>
 
       {/* contact location map */}
-      <section className="mt-6 md:mt-8 lg:mt-10">
+      <section>
         <ContactMap></ContactMap>
       </section>
     </>

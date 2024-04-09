@@ -7,7 +7,7 @@ function ContactMap() {
       center={[23.70731, 90.415482]}
       zoom={13}
       scrollWheelZoom={true}
-      style={{ height: "80vh" }}
+      className="h-[50vh] md:h-[60vh] lg:h-[90vh]"
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
