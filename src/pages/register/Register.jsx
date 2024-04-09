@@ -1,13 +1,16 @@
 import { useContext, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../auth/AuthProvider";
 import Button from "../../shareComponents/Button";
 
 function Register() {
+  // user visit location find
+  const location = useLocation();
+
   // after registration navigate to home page
   const navigate = useNavigate();
   // handle create user with email and password
@@ -45,7 +48,7 @@ function Register() {
       updateUserProfile(userName, photoUrl)
         .then(() => {
           toast.success("Registration successful.");
-          navigate("/");
+          navigate(location.state || "/");
         })
         .catch((err) => {
           if (err.message === "Firebase: Error (auth/email-already-in-use).") {

@@ -1,11 +1,15 @@
 import { useContext, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../auth/AuthProvider";
 import Button from "../../shareComponents/Button";
 function Login() {
+  // user visit location find
+  const location = useLocation();
+  console.log(location?.state);
+
   // after login navigate
   const navigate = useNavigate();
 
@@ -28,7 +32,7 @@ function Login() {
     handleLogin(email, password)
       .then(() => {
         toast.success("Login successful");
-        navigate("/");
+        navigate(location.state || "/");
       })
       .catch(() => toast.error("Invalid credential!"));
   };
@@ -37,7 +41,7 @@ function Login() {
   const googleLogin = () => {
     handleGoogleLogin().then(() => {
       toast.success("Google login successful");
-      navigate("/");
+      navigate(location.state || "/");
     });
   };
 
@@ -45,7 +49,7 @@ function Login() {
   const githubLogin = () => {
     handleGithubLogin().then(() => {
       toast.success("Github login successful");
-      navigate("/");
+      navigate(location.state || "/");
     });
   };
   return (
@@ -129,6 +133,7 @@ function Login() {
             {`Don't have an account?`}{" "}
             <Link
               to="/register"
+              state={location?.state}
               className="underline font-semibold text-green-500"
             >
               Register
