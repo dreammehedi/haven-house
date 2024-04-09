@@ -1,30 +1,43 @@
 # Haven House
 
+[Live Site](https://www.example.com)
+
+## Features and Characteristics
+
+- Responsive design for seamless viewing on all devices
+- User-friendly navigation for easy exploration of content
+- Interactive forms for seamless user engagement
+- Secure authentication system for user accounts
+- Dynamic content updates for real-time information delivery
+
+## NPM Package Used
+
+The npm package used for the challenges task is :
+
+- `React Hook Form`
+- `Swiper Slider`
+
 ## Welcome to Haven House: A Sanctuary for Hope
 
 At Haven House, we believe in providing sanctuary, support, and hope to those in need. Founded in 2024, we have been dedicated to serving our community and offering a safe haven for individuals and families facing difficult circumstances.
 
-## Our Mission
+## Services Offered
 
-Our mission at Haven House is simple yet profound: to empower individuals and families to rebuild their lives and move towards a brighter future. We strive to create a nurturing environment where everyone feels valued, supported, and respected.
+### Sailing Adventures
 
-## A Sanctuary for Hope
+- **Boat Rentals:** Explore our fleet of sailboats, yachts, and catamarans available for rent. Perfect for day trips, weekend getaways, or extended vacations.
+- **Sailing Tours:** Join one of our expert-led sailing tours for an unforgettable experience on the open water. Discover hidden coves, pristine beaches, and breathtaking vistas.
+- **Sailing Lessons:** Learn the ropes from our certified instructors. From beginner basics to advanced techniques, we offer courses for all skill levels.
 
-Haven House serves as a beacon of hope for those experiencing homelessness, domestic violence, substance abuse, and other challenges. We offer a range of services and resources designed to address the unique needs of each individual and family we serve.
+### Property Rentals
 
-## Our Services
+- **Vacation Rentals:** Find your dream vacation home with our selection of beachfront villas, cozy cottages, and luxury condos. Whether you're planning a romantic getaway or a family retreat, we have the perfect property for you.
+- **Long-Term Rentals:** Searching for a new home? Browse our listings of long-term rental properties, including apartments, townhouses, and single-family homes. Let us help you find your ideal living space.
 
-- **Emergency Shelter:** We provide safe and secure emergency shelter for individuals and families in crisis, offering a temporary respite from the challenges they face.
+### Property Management
 
-- **Counseling and Support:** Our team of compassionate counselors and support staff offer individual and group counseling, case management, and advocacy services to help clients navigate their journey towards healing and stability.
-
-- **Life Skills Training:** We offer life skills training programs focused on budgeting, job readiness, parenting skills, and more, equipping individuals with the tools they need to succeed.
-
-- **Community Outreach:** Through community outreach initiatives and partnerships, we work to raise awareness about homelessness, domestic violence, and other social issues, and advocate for systemic change.
-
-## Get Involved
-
-Haven House relies on the support of generous donors, volunteers, and community partners to fulfill our mission. Whether you're interested in making a donation, volunteering your time, or hosting a fundraising event, there are many ways you can get involved and make a difference.
+- **Rental Management:** Own a rental property? Let us handle the details. Our property management services include marketing, tenant screening, rent collection, maintenance coordination, and more.
+- **Vacation Home Management:** Turn your vacation home into a hassle-free investment with our vacation rental management services. We'll take care of bookings, guest communications, cleaning, and maintenance, so you can relax and enjoy the returns.
 
 ## Contact Us
 
