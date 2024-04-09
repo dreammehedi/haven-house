@@ -66,7 +66,9 @@ function EstateDetails() {
             <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl capitalize">
               {estate?.estate_title}
             </h2>
-            <p className="text-gray-400 text-wrap">{estate?.description}</p>
+            <p className="text-gray-400 text-wrap w-full md:max-w-4xl">
+              {estate?.long_description}
+            </p>
 
             <div className="flex flex-col space-y-8 !mt-10">
               <div className="flex justify-start space-x-6  md:space-x-10 items-center w-full">
