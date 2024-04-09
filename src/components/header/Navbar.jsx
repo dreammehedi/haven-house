@@ -1,9 +1,12 @@
 import { useState } from "react";
+// import { AuthContext } from "../../auth/AuthProvider";
 import Logo from "./Logo";
 import MenuItems from "./MenuItems";
 import UserProfile from "./UserProfile";
 
 function Navbar() {
+  // const { user } = useContext(AuthContext);
+  // console.log(user);
   // mobile menu active
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
   const handleMenuActive = () => {

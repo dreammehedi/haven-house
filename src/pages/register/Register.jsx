@@ -1,12 +1,15 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AuthContext } from "../../auth/AuthProvider";
 import Button from "../../shareComponents/Button";
 
 function Register() {
+  // handle create user with email and password
+  const { handleRegister } = useContext(AuthContext);
   // handle form with hook
   const { register, handleSubmit, setFocus } = useForm();
 
@@ -34,6 +37,9 @@ function Register() {
       );
       return;
     }
+    // successfully created user
+    handleRegister(email, password);
+
     toast.success("Registration successful.");
   };
 
