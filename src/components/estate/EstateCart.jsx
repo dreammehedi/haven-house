@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { FaBed, FaChartArea, FaShower } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import img_404 from "../../assets/404_image.png";
 import Button from "../../shareComponents/Button";
 function EstateCart({ estate }) {
@@ -61,7 +62,9 @@ function EstateCart({ estate }) {
         <h2 className="font-bold text-2xl capitalize">{estate_title}</h2>
         <p className="text-gray-400 text-wrap">{description}</p>
 
-        <Button cls={"mr-auto"} name="View Property"></Button>
+        <Link to={`/estatedetailes/${id}`} className="mr-auto !mt-6">
+          <Button cls={"mr-auto"} name="View Property"></Button>
+        </Link>
       </div>
     </div>
   );

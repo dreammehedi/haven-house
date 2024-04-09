@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const menuContent = [
   { id: 1, name: "Home", path: "/" },
   { id: 2, name: "Update Profile", path: "/updateprofile" },
-  { id: 3, name: "Login", path: "/login" },
+  { id: 3, name: "Register", path: "/register" },
 ];
 function MenuItems({ handleMenuActive }) {
   return (

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { ColorRing } from "react-loader-spinner";
 import TestimonialClient from "./TestimonialClient";
 
 // Import Swiper React components
@@ -11,6 +10,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
+import Loader from "../../shareComponents/Loader";
 
 function Testimonials() {
   // testimonial data calling
@@ -31,14 +31,7 @@ function Testimonials() {
   if (loader) {
     return (
       <div className="flex justify-center items-center">
-        <ColorRing
-          visible={true}
-          height="100"
-          width="100"
-          ariaLabel="color-ring-loading"
-          wrapperClass="color-ring-wrapper "
-          colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
-        />
+        <Loader></Loader>
       </div>
     );
   }

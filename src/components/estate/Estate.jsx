@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { ColorRing } from "react-loader-spinner";
 import Button from "../../shareComponents/Button";
+import Loader from "../../shareComponents/Loader";
 import EstateCart from "./EstateCart";
 function Estate() {
   // estate data calling
@@ -27,14 +27,7 @@ function Estate() {
   if (loader) {
     return (
       <div className="flex justify-center items-center">
-        <ColorRing
-          visible={true}
-          height="100"
-          width="100"
-          ariaLabel="color-ring-loading"
-          wrapperClass="color-ring-wrapper "
-          colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
-        />
+        <Loader></Loader>
       </div>
     );
   }
