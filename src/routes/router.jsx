@@ -47,7 +47,7 @@ const router = createBrowserRouter([
         path: "/contactus",
         element: (
           <PrivateRoute>
-            <ContactUs></ContactUs>,
+            <ContactUs></ContactUs>
           </PrivateRoute>
         ),
       },
