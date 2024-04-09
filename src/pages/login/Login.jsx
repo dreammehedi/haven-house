@@ -8,7 +8,6 @@ import Button from "../../shareComponents/Button";
 function Login() {
   // user visit location find
   const location = useLocation();
-  console.log(location?.state);
 
   // after login navigate
   const navigate = useNavigate();

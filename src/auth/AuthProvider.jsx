@@ -25,7 +25,7 @@ function AuthProvider({ children }) {
         setUserLoader(false);
         setUserInfo(currentUser);
       } else {
-        setUserLoader(true);
+        setUserLoader(false);
         setUserInfo(null);
       }
     });
