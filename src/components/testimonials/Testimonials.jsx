@@ -6,10 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import Loader from "../../shareComponents/Loader";
 
 function Testimonials() {
@@ -40,11 +39,8 @@ function Testimonials() {
     <>
       <Swiper
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
         }}
         breakpoints={{
           640: {
@@ -56,7 +52,7 @@ function Testimonials() {
             spaceBetween: 40,
           },
         }}
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay]}
         className="mySwiper !py-3"
       >
         {testimonials.map((client) => {

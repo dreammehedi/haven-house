@@ -35,12 +35,6 @@ At Haven House, we believe in providing sanctuary, support, and hope to those in
 
 ## Services Offered
 
-### Sailing Adventures
-
-- **Boat Rentals:** Explore our fleet of sailboats, yachts, and catamarans available for rent. Perfect for day trips, weekend getaways, or extended vacations.
-- **Sailing Tours:** Join one of our expert-led sailing tours for an unforgettable experience on the open water. Discover hidden coves, pristine beaches, and breathtaking vistas.
-- **Sailing Lessons:** Learn the ropes from our certified instructors. From beginner basics to advanced techniques, we offer courses for all skill levels.
-
 ### Property Rentals
 
 - **Vacation Rentals:** Find your dream vacation home with our selection of beachfront villas, cozy cottages, and luxury condos. Whether you're planning a romantic getaway or a family retreat, we have the perfect property for you.

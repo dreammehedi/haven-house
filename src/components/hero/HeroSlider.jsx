@@ -15,7 +15,7 @@ function HeroSlider({
       }}
       className="!bg-no-repeat !bg-cover !bg-center w-full h-full rounded-3xl overflow-hidden"
     >
-      <div className="w-full h-full md:max-w-3xl p-4 md:p-6 flex flex-col justify-center space-y-3 text-white">
+      <div className="w-full h-full md:max-w-3xl p-6 md:p-8 lg:p-10 flex flex-col justify-center space-y-3 text-white">
         <h1 className="font-semibold text-3xl md:text-4xl lg:text-5xl leading-normal lg:leading-[4rem] capitalize">
           {title1} <span className="text-green-500">{title2}</span>
           {title3}

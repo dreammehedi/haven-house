@@ -9,23 +9,21 @@ import slider4 from "../../assets/slider/slider4.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "./slider.css";
 // import required modules
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 function Banner() {
   return (
     <>
       <Swiper
-        navigation={true}
         autoplay={{
           delay: 2500,
         }}
-        modules={[Autoplay, Navigation, Pagination]}
+        modules={[Autoplay, Pagination]}
         spaceBetween={30}
         pagination={{
           clickable: true,
-          dynamicBullets: true,
         }}
         className="mySwiper h-[400px] md:h-[450px] lg:h-bannerHeight lg:min-h-[450px] rounded-3xl"
       >

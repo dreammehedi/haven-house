@@ -27,15 +27,19 @@ function Home() {
           description={`Welcome to our services section, where we offer a comprehensive range of solutions tailored to meet your needs. From consultation to execution, our dedicated team is here to provide expertise and support every step of the way.`}
         ></SectionTitle>
         {/* our service items */}
-        <div className="container my-4 flex flex-wrap justify-around gap-8 md:gap-10">
-          <Service name="Saling Services">
-            <BsHouseCheckFill className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></BsHouseCheckFill>
-          </Service>
+        <div className="container my-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between gap-8 md:gap-10">
           <Service name=" Renting Services">
             <FaTengeSign className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></FaTengeSign>
           </Service>
+          <Service name="Saling Services">
+            <BsHouseCheckFill className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></BsHouseCheckFill>
+          </Service>
+
           <Service name=" Property Listing">
             <PiListChecksFill className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></PiListChecksFill>
+          </Service>
+          <Service name="Saling Services">
+            <BsHouseCheckFill className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></BsHouseCheckFill>
           </Service>
           <Service name="Property Management">
             <GiBlockHouse className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></GiBlockHouse>
