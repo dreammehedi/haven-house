@@ -4,6 +4,7 @@ const menuContent = [
   { id: 1, name: "Home", path: "/" },
   { id: 2, name: "Update Profile", path: "/updateprofile" },
   { id: 3, name: "Register", path: "/register" },
+  { id: 4, name: "Contact Us", path: "/contactus" },
 ];
 function MenuItems({ handleMenuActive }) {
   return (

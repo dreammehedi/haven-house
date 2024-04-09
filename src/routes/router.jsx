@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layout/Root";
+import ContactUs from "../pages/contact/ContactUs";
 import Error from "../pages/error/Error";
 import EstateDetailes from "../pages/estateDetailes/EstateDetailes";
 import Home from "../pages/home/Home";
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
             <UpdateProfile></UpdateProfile>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/contactus",
+        element: <ContactUs></ContactUs>,
       },
     ],
   },
