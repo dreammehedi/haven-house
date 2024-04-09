@@ -4,6 +4,7 @@ import Error from "../pages/error/Error";
 import EstateDetailes from "../pages/estateDetailes/EstateDetailes";
 import Home from "../pages/home/Home";
 import Login from "../pages/login/Login";
+import UpdateProfile from "../pages/profile/UpdateProfile";
 import Register from "../pages/register/Register";
 import PrivateRoute from "../privateroute/PrivateRoute";
 
@@ -30,6 +31,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <EstateDetailes></EstateDetailes>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/updateprofile",
+        element: (
+          <PrivateRoute>
+            <UpdateProfile></UpdateProfile>
           </PrivateRoute>
         ),
       },
