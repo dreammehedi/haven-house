@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
-function Button({ onClick, cls, name }) {
+function Button({ onClick, cls, name, type }) {
   return (
     <button
+      type={type && type}
       onClick={onClick && onClick}
       className={`${
         cls && cls
@@ -16,5 +17,6 @@ Button.propTypes = {
   cls: PropTypes.string,
   name: PropTypes.string,
   onClick: PropTypes.func,
+  type: PropTypes.string,
 };
 export default Button;

@@ -1,35 +1,74 @@
 import { Helmet } from "react-helmet-async";
+import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Button from "../../shareComponents/Button";
+
 function Register() {
+  // handle form with hook
+  const { register, handleSubmit } = useForm();
+
+  // handle submit form
+  const onSubmit = (data) => {
+    const { userName, email, photoUrl, password } = data;
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+
+    if (!userName || !email || !password || !photoUrl) {
+      toast.error("Please fill all the fields");
+      return;
+    }
+    if (password.length < 6) {
+      toast.error("Password must be at least 6 characters");
+      return;
+    }
+    if (!passwordRegex.test(password)) {
+      toast.error(
+        "Password must contain at least one lowercase letter and one uppercase letter!"
+      );
+      return;
+    }
+    toast.success("Registration successful.");
+  };
+
   return (
     <>
       <Helmet>
         <title>Haven House | Register</title>
       </Helmet>
+      <ToastContainer></ToastContainer>
+
       <section className="container">
         <div className="container ring-1 ring-green-500/50 w-full md:max-w-md mx-auto p-8 space-y-3 rounded-3xl bg-white shadow-md my-8">
           <h1 className="text-2xl md:text-3xl font-semibold font-poppins text-center">
             Register
           </h1>
-          <form className="flex flex-col space-y-6 font-poppins">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col space-y-6 font-poppins"
+          >
             <div className="space-y-1 text-sm">
               <label htmlFor="userName" className="block font-semibold">
                 UserName
               </label>
               <input
+                {...register("userName")}
                 type="text"
                 name="userName"
                 id="userName"
                 placeholder="Enter Your UserName..."
                 className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
               />
+              {/* {errors.userName &&
+                errors.userName.type === "required" &&
+                toast.error("UserName is Required!")} */}
             </div>
             <div className="space-y-1 text-sm">
               <label htmlFor="email" className="block font-semibold">
                 Email
               </label>
               <input
+                {...register("email")}
                 type="email"
                 name="email"
                 id="email"
@@ -42,6 +81,7 @@ function Register() {
                 Photo
               </label>
               <input
+                {...register("photoUrl")}
                 type="text"
                 name="photoUrl"
                 id="photoUrl"
@@ -54,14 +94,27 @@ function Register() {
                 Password
               </label>
               <input
+                {...register("password")}
                 type="password"
                 name="password"
                 id="password"
                 placeholder="Enter Your Password..."
                 className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
               />
+              {/* {errors.password && errors.password.type === "required" && (
+                <span>Password is required</span>
+              )}
+              {errors.password && errors.password.type === "minLength" && (
+                <span>Password must be at least 6 characters long</span>
+              )}
+              {errors.password && errors.password.type === "pattern" && (
+                <span>
+                  Password must contain at least one uppercase and one lowercase
+                  letter
+                </span>
+              )} */}
             </div>
-            <Button cls={"!mx-auto"} name="Register"></Button>
+            <Button type="submit" cls={"!mx-auto"} name="Register"></Button>
           </form>
           <div className="flex items-center pt-4 space-x-1">
             <div className="flex-1 h-px sm:w-16 bg-gray-300"></div>
