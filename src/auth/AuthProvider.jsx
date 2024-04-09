@@ -6,6 +6,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import PropTypes from "prop-types";
 import { createContext, useEffect, useState } from "react";
@@ -73,6 +74,14 @@ function AuthProvider({ children }) {
   //     return signInWithPopup(auth, facebookProvider);
   //   };
 
+  // update user profile
+  const updateUserProfile = (userName, photoUrl) => {
+    return updateProfile(auth.currentUser, {
+      displayName: userName,
+      photoURL: photoUrl,
+    });
+  };
+
   // create all information about the auth users
   const authInfo = {
     userInfo,
@@ -82,6 +91,7 @@ function AuthProvider({ children }) {
     handleLogout,
     handleGoogleLogin,
     handleGithubLogin,
+    updateUserProfile,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

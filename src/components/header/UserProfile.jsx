@@ -11,7 +11,6 @@ function UserProfile({ mobileMenuActive, handleMenuActive }) {
   // check user is already logged in
   const { userInfo, handleLogout } = useContext(AuthContext);
 
-  console.log(userInfo);
   return (
     <>
       <ToastContainer></ToastContainer>
@@ -21,13 +20,13 @@ function UserProfile({ mobileMenuActive, handleMenuActive }) {
           {userInfo && (
             <>
               <img
-                className="w-[40px] md:w-[50px] object-cover cursor-pointer "
-                src={userInfo?.photoUrl || userIcon}
+                className="w-[40px] md:w-[50px] rounded-full object-cover cursor-pointer transition-all duration-300 ease-linear"
+                src={userInfo?.photoURL || userIcon}
                 alt="userIcon"
               />
-              <span className="absolute top-1/2 -translate-y-1/2 right-full mr-3  group-hover:inline-block bg-white text-black font-bold font-poppins text-sm transition-all duration-300 ease-linear  group-hover:opacity-100">
+              <h4 className="absolute top-1/2 text-wrap -translate-y-1/2 right-full mr-3 opacity-0 hidden group-hover:flex bg-white text-black font-bold font-poppins text-sm transition-all duration-300 ease-linear  group-hover:opacity-100">
                 {userInfo?.displayName || userInfo?.email}
-              </span>
+              </h4>
             </>
           )}
         </div>
@@ -37,10 +36,10 @@ function UserProfile({ mobileMenuActive, handleMenuActive }) {
             onClick={() => {
               handleLogout()
                 .then(() => {
-                  toast.success("Logout Successfull!");
+                  toast.success("Logout Success!");
                 })
                 .catch(() => {
-                  toast.error("An error happened!");
+                  toast.error("Something went wrong!");
                 });
             }}
             name="Logout"
