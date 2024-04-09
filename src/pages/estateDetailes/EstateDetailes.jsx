@@ -3,8 +3,11 @@ import {
   FaAngleDoubleRight,
   FaBed,
   FaChartArea,
+  FaRestroom,
   FaShower,
 } from "react-icons/fa";
+import { FaKitchenSet } from "react-icons/fa6";
+import { GiMechanicGarage } from "react-icons/gi";
 import { IoLocation } from "react-icons/io5";
 import { Link, useParams } from "react-router-dom";
 import img_404 from "../../assets/404_image.png";
@@ -87,6 +90,9 @@ function EstateDetails() {
                 <div className="flex flex-col space-y-2 items-center capitalize bg-green-100 p-6 md:p-8 cursor-pointer transition-all duration-300 ease-linear hover:bg-green-200 hover:ring-1 hover:ring-green-500/50 rounded-xl">
                   <FaChartArea className="text-green-500/80 text-3xl md:text-4xl lg:text-5xl"></FaChartArea>
                   <p className="font-medium font-nunito text-gray-500">
+                    <span className="font-medium font-nunito text-gray-900">
+                      Area:
+                    </span>{" "}
                     {estate?.area}
                   </p>
                 </div>
@@ -105,7 +111,29 @@ function EstateDetails() {
                 <div className="flex flex-col space-y-2 items-center capitalize bg-green-100 p-6 md:p-8 cursor-pointer transition-all duration-300 ease-linear hover:bg-green-200 hover:ring-1 hover:ring-green-500/50 rounded-xl">
                   <IoLocation className="text-green-500/80 text-3xl md:text-4xl lg:text-5xl"></IoLocation>
                   <p className="font-medium font-nunito text-gray-500">
-                    {estate?.location} Bath Rooms
+                    <span className="font-medium font-nunito text-gray-900">
+                      {" "}
+                      Location:
+                    </span>{" "}
+                    {estate?.location}
+                  </p>
+                </div>
+                <div className="flex flex-col space-y-2 items-center capitalize bg-green-100 p-6 md:p-8 cursor-pointer transition-all duration-300 ease-linear hover:bg-green-200 hover:ring-1 hover:ring-green-500/50 rounded-xl">
+                  <FaKitchenSet className="text-green-500/80 text-3xl md:text-4xl lg:text-5xl"></FaKitchenSet>
+                  <p className="font-medium font-nunito text-gray-500">
+                    {estate?.kitchen} Kitchen
+                  </p>
+                </div>
+                <div className="flex flex-col space-y-2 items-center capitalize bg-green-100 p-6 md:p-8 cursor-pointer transition-all duration-300 ease-linear hover:bg-green-200 hover:ring-1 hover:ring-green-500/50 rounded-xl">
+                  <GiMechanicGarage className="text-green-500/80 text-3xl md:text-4xl lg:text-5xl"></GiMechanicGarage>
+                  <p className="font-medium font-nunito text-gray-500">
+                    {estate?.garage} Garage
+                  </p>
+                </div>
+                <div className="flex flex-col space-y-2 items-center capitalize bg-green-100 p-6 md:p-8 cursor-pointer transition-all duration-300 ease-linear hover:bg-green-200 hover:ring-1 hover:ring-green-500/50 rounded-xl">
+                  <FaRestroom className="text-green-500/80 text-3xl md:text-4xl lg:text-5xl"></FaRestroom>
+                  <p className="font-medium font-nunito text-gray-500">
+                    {estate?.living_room} Living Rooms
                   </p>
                 </div>
               </div>
@@ -121,6 +149,23 @@ function EstateDetails() {
                       <li key={ind} className="flex items-center">
                         <FaAngleDoubleRight className="mr-1"></FaAngleDoubleRight>{" "}
                         {facilite}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+
+              {/* amenities */}
+              <div className="flex flex-col space-y-3">
+                <h1 className="font-bold text-xl md:text-2xl capitalize border-b border-gray-200 mr-auto">
+                  Amenities
+                </h1>
+                <ul className="flex flex-col space-y-2 font-medium text-gray-400 font-lato">
+                  {estate?.amenities.map((amenities, ind) => {
+                    return (
+                      <li key={ind} className="flex items-center">
+                        <FaAngleDoubleRight className="mr-1"></FaAngleDoubleRight>{" "}
+                        {amenities}
                       </li>
                     );
                   })}

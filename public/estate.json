@@ -6,6 +6,7 @@
       "estate_title": "Modern Apartment in Downtown",
       "image": "https://i.ibb.co/rxKgs98/apartment1.png",
       "description": "Beautiful modern apartment located in the heart of downtown. Spacious living room, fully equipped kitchen, and stunning city views.",
+      "long_description": "This modern apartment offers a comfortable and luxurious living experience. With its spacious living room, fully equipped kitchen, and stunning city views, it provides the perfect urban retreat. The apartment is designed with contemporary furnishings and stylish decor, creating a welcoming ambiance for residents.",
       "price": "$500,000",
       "status": "sale",
       "area": "1500 sq ft",
@@ -16,7 +17,19 @@
         "City views"
       ],
       "bedrooms": 2,
-      "bathrooms": 2
+      "bathrooms": 2,
+      "kitchen": 1,
+      "garage": 0,
+      "living_room": 1,
+      "amenities": [
+        "Air Conditioning",
+        "Bedding",
+        "Balcony",
+        "Cable TV",
+        "Internet",
+        "Parking",
+        "lift"
+      ]
     },
     {
       "id": 2,
@@ -24,6 +37,7 @@
       "estate_title": "Cozy Family Home in Suburbia",
       "image": "",
       "description": "Charming family home located in a quiet suburban neighborhood. Large backyard, perfect for kids and pets. Close to schools and parks.",
+      "long_description": "This cozy family home offers the perfect blend of comfort and convenience. Situated in a quiet suburban neighborhood, it features a spacious living area, a fully equipped kitchen, and a large backyard ideal for outdoor gatherings. With its proximity to schools and parks, it's an ideal choice for families.",
       "price": "$350,000",
       "status": "rent",
       "area": "2000 sq ft",
@@ -34,7 +48,11 @@
         "Quiet neighborhood"
       ],
       "bedrooms": 3,
-      "bathrooms": 2
+      "bathrooms": 2,
+      "kitchen": 1,
+      "garage": 1,
+      "living_room": 1,
+      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"]
     },
     {
       "id": 3,
@@ -42,6 +60,7 @@
       "estate_title": "Luxury Condo with Ocean View",
       "image": "https://i.ibb.co/kxNPm5b/condo1.png",
       "description": "Luxurious condo with breathtaking ocean views. High-end finishes, resort-style amenities, and convenient location near beaches and restaurants.",
+      "long_description": "Experience luxury living with this stunning condo offering breathtaking ocean views. With its high-end finishes, resort-style amenities, and convenient location near beaches and restaurants, it provides the ultimate coastal retreat. Whether you're lounging on the balcony or enjoying the upscale amenities, this condo offers a lifestyle of unparalleled luxury.",
       "price": "$800,000",
       "status": "sale",
       "area": "1800 sq ft",
@@ -52,7 +71,18 @@
         "Close to beaches"
       ],
       "bedrooms": 2,
-      "bathrooms": 2
+      "bathrooms": 2,
+      "kitchen": 1,
+      "garage": 1,
+      "living_room": 1,
+      "amenities": [
+        "Air Conditioning",
+        "Bedding",
+        "Balcony",
+        "Cable TV",
+        "Internet",
+        "Parking"
+      ]
     },
     {
       "id": 4,
@@ -60,13 +90,18 @@
       "estate_title": "Townhouse with Private Garden",
       "image": "https://i.ibb.co/9NWNdM4/townhouse1.png",
       "description": "Spacious townhouse with a private garden oasis. Ideal for entertaining guests and outdoor relaxation. Close to shops and entertainment.",
+      "long_description": "This spacious townhouse offers a private garden oasis, perfect for outdoor entertaining and relaxation. With its spacious living area, fully equipped kitchen, and serene surroundings, it provides the ideal retreat from city life. Close to shops and entertainment, it offers convenience without sacrificing tranquility.",
       "price": "$450,000",
       "status": "rent",
       "area": "2200 sq ft",
       "location": "Urban, City",
       "facilities": ["Private garden", "Close to shops", "Spacious layout"],
       "bedrooms": 3,
-      "bathrooms": 2
+      "bathrooms": 2,
+      "kitchen": 1,
+      "garage": 0,
+      "living_room": 1,
+      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"]
     },
     {
       "id": 5,
@@ -74,6 +109,7 @@
       "estate_title": "Mountain View Villa",
       "image": "https://i.ibb.co/brMWxkp/villa1.png",
       "description": "Exquisite villa nestled in the mountains with panoramic views. Elegant design, luxurious amenities, and serene surroundings.",
+      "long_description": "Escape to luxury with this exquisite mountain view villa. Offering panoramic views, elegant design, and luxurious amenities, it provides the ultimate retreat for relaxation and rejuvenation. Whether you're enjoying the views from the balcony or lounging by the pool, this villa offers a luxurious lifestyle.",
       "price": "$1,200,000",
       "status": "rent",
       "area": "3000 sq ft",
@@ -84,7 +120,19 @@
         "Serene surroundings"
       ],
       "bedrooms": 4,
-      "bathrooms": 3
+      "bathrooms": 3,
+      "kitchen": 1,
+      "garage": 1,
+      "living_room": 1,
+      "amenities": [
+        "Air Conditioning",
+        "Bedding",
+        "Balcony",
+        "Cable TV",
+        "Internet",
+        "Parking",
+        "Pool"
+      ]
     },
     {
       "id": 6,
@@ -92,6 +140,7 @@
       "estate_title": "Lakefront Retreat",
       "image": "https://i.ibb.co/nbLNBrG/lakafront1.png",
       "description": "Tranquil lakefront property offering a peaceful retreat. Spacious interiors, private dock, and breathtaking lake views.",
+      "long_description": "Indulge in tranquility with this lakefront retreat. Offering spacious interiors, a private dock, and breathtaking lake views, it provides the perfect escape from the hustle and bustle of city life. Whether you're fishing from the dock or enjoying a sunset cruise, this lakehouse offers serenity at its finest.",
       "price": "$900,000",
       "status": "sale",
       "area": "2500 sq ft",
@@ -102,7 +151,18 @@
         "Tranquil surroundings"
       ],
       "bedrooms": 3,
-      "bathrooms": 3
+      "bathrooms": 3,
+      "kitchen": 1,
+      "garage": 1,
+      "living_room": 1,
+      "amenities": [
+        "Air Conditioning",
+        "Bedding",
+        "Balcony",
+        "Cable TV",
+        "Internet",
+        "Parking"
+      ]
     },
     {
       "id": 7,
@@ -110,13 +170,18 @@
       "estate_title": "Country Cottage with Garden",
       "image": "https://i.ibb.co/kcWtRqw/cottage1.png",
       "description": "Quaint country cottage surrounded by lush gardens. Perfect for nature lovers seeking peace and tranquility.",
+      "long_description": "Embrace the charm of country living with this quaint cottage. Surrounded by lush gardens and tranquil surroundings, it provides the perfect escape from the hustle and bustle of city life. Whether you're relaxing on the porch or exploring the countryside, this cottage offers serenity at its best.",
       "price": "$300,000",
       "status": "rent",
       "area": "1200 sq ft",
       "location": "Countryside, City",
       "facilities": ["Lush gardens", "Peaceful surroundings", "Quaint charm"],
       "bedrooms": 2,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "kitchen": 1,
+      "garage": 0,
+      "living_room": 1,
+      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"]
     },
     {
       "id": 8,
@@ -124,6 +189,7 @@
       "estate_title": "Penthouse with Skyline Views",
       "image": "https://i.ibb.co/CsTZcpT/penthouse1.png",
       "description": "Luxurious penthouse offering breathtaking skyline views. High-end finishes, spacious layout, and exclusive amenities.",
+      "long_description": "Experience luxury living at its finest with this stunning penthouse. Offering breathtaking skyline views, high-end finishes, and exclusive amenities, it provides the ultimate urban retreat. Whether you're hosting a dinner party in the gourmet kitchen or relaxing in the spa-like bathroom, this penthouse offers unparalleled luxury.",
       "price": "$1,500,000",
       "status": "sale",
       "area": "3500 sq ft",
@@ -134,7 +200,19 @@
         "High-end finishes"
       ],
       "bedrooms": 4,
-      "bathrooms": 4
+      "bathrooms": 4,
+      "kitchen": 1,
+      "garage": 2,
+      "living_room": 1,
+      "amenities": [
+        "Air Conditioning",
+        "Bedding",
+        "Balcony",
+        "Cable TV",
+        "Internet",
+        "Parking",
+        "Home Theater"
+      ]
     },
     {
       "id": 9,
@@ -142,13 +220,18 @@
       "estate_title": "Beachfront Bungalow",
       "image": "https://i.ibb.co/y690c6x/bungalow1.png",
       "description": "Charming beachfront bungalow steps away from the ocean. Relaxing coastal vibes, private patio, and direct beach access.",
+      "long_description": "Indulge in beachfront living with this charming bungalow. Just steps away from the ocean, it offers relaxing coastal vibes, a private patio, and direct beach access. Whether you're lounging on the porch or taking a sunset stroll on the beach, this bungalow offers the perfect beach getaway.",
       "price": "$600,000",
       "status": "rent",
       "area": "2000 sq ft",
       "location": "Beachfront, City",
       "facilities": ["Direct beach access", "Private patio", "Coastal vibes"],
       "bedrooms": 3,
-      "bathrooms": 2
+      "bathrooms": 2,
+      "kitchen": 1,
+      "garage": 1,
+      "living_room": 1,
+      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"]
     }
   ]
 }
