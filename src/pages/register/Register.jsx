@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
@@ -7,7 +8,12 @@ import Button from "../../shareComponents/Button";
 
 function Register() {
   // handle form with hook
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, setFocus } = useForm();
+
+  // focus field
+  useEffect(() => {
+    setFocus("userName");
+  }, [setFocus]);
 
   // handle submit form
   const onSubmit = (data) => {
@@ -15,11 +21,11 @@ function Register() {
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
 
     if (!userName || !email || !password || !photoUrl) {
-      toast.error("Please fill all the fields");
+      toast.error("Please fill all the fields!");
       return;
     }
     if (password.length < 6) {
-      toast.error("Password must be at least 6 characters");
+      toast.error("Password must be at least 6 characters!");
       return;
     }
     if (!passwordRegex.test(password)) {
