@@ -14,8 +14,8 @@
 
 The npm package used for the challenges task is :
 
-- `React Hook Form`
-- `Swiper Slider`
+[`React Hook Form`](https://react-hook-form.com/)
+[`Swiper Slider`](https://swiperjs.com/)
 
 ## Welcome to Haven House: A Sanctuary for Hope
 
