@@ -2,6 +2,7 @@ import {
   GithubAuthProvider,
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
   signInWithPopup,
 } from "firebase/auth";
 import PropTypes from "prop-types";
@@ -13,6 +14,11 @@ function AuthProvider({ children }) {
   // handle create user with email and password
   const handleRegister = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
+  };
+
+  //   handle user login with email and password
+  const handleLogin = (email, password) => {
+    return signInWithEmailAndPassword(auth, email, password);
   };
   //   handle create user with google account
   const googleProvider = new GoogleAuthProvider();
@@ -35,6 +41,7 @@ function AuthProvider({ children }) {
   // create all information about the auth users
   const authInfo = {
     handleRegister,
+    handleLogin,
     handleGoogleLogin,
     handleGithubLogin,
   };

@@ -1,23 +1,59 @@
+import { useContext, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import { AuthContext } from "../../auth/AuthProvider";
 import Button from "../../shareComponents/Button";
 function Login() {
+  // after registration navigate to home page
+  const navigate = useNavigate();
+  // handle create user with email and password
+  const { handleLogin, handleGoogleLogin, handleGithubLogin } =
+    useContext(AuthContext);
+  // handle form with hook
+  const { register, handleSubmit, setFocus } = useForm();
+
+  // focus field
+  useEffect(() => {
+    setFocus("email");
+  }, [setFocus]);
+
+  // handle submit form
+  const onLogin = (data) => {
+    const { email, password } = data;
+
+    // successfully login user
+    handleLogin(email, password)
+      .then(() => {
+        navigate("/");
+      })
+      .catch(() => {
+        toast.error("Invalid credential!");
+      });
+  };
+
   return (
     <>
       <Helmet>
         <title>Haven House | Login</title>
       </Helmet>
+      <ToastContainer></ToastContainer>
       <section className="container">
         <div className="ring-1 ring-green-500/50 w-full md:max-w-md mx-auto p-8 space-y-3 rounded-3xl bg-white shadow-md my-8">
           <h1 className="text-2xl md:text-3xl font-semibold font-poppins text-center">
             Login
           </h1>
-          <form className="flex flex-col space-y-6 font-poppins">
+          <form
+            onSubmit={handleSubmit(onLogin)}
+            className="flex flex-col space-y-6 font-poppins"
+          >
             <div className="space-y-1 text-sm">
               <label htmlFor="email" className="block font-semibold">
                 Email
               </label>
               <input
+                {...register("email", { required: true })}
                 type="email"
                 name="email"
                 id="email"
@@ -30,6 +66,7 @@ function Login() {
                 Password
               </label>
               <input
+                {...register("password", { required: true })}
                 type="password"
                 name="password"
                 id="password"
@@ -48,6 +85,15 @@ function Login() {
           </div>
           <div className="flex justify-center space-x-4">
             <button
+              onClick={() => {
+                handleGoogleLogin()
+                  .then(() => {
+                    toast.success("Registration successful.");
+                  })
+                  .catch(() => {
+                    toast.error("Something went wrong!");
+                  });
+              }}
               aria-label="Log in with Google"
               className="hover:bg-green-500/50 rounded-full p-3"
             >
@@ -60,6 +106,15 @@ function Login() {
               </svg>
             </button>
             <button
+              onClick={() => {
+                handleGithubLogin()
+                  .then(() => {
+                    toast.success("Registration successful.");
+                  })
+                  .catch(() => {
+                    toast.error("Something went wrong!");
+                  });
+              }}
               aria-label="Log in with GitHub"
               className="hover:bg-green-500/50 rounded-full p-3"
             >
