@@ -27,8 +27,8 @@ function Login() {
     // successfully login user
     handleLogin(email, password)
       .then(() => {
-        navigate("/");
         toast.success("Login successful");
+        navigate("/");
       })
       .catch(() => toast.error("Invalid credential!"));
   };
@@ -37,6 +37,7 @@ function Login() {
   const googleLogin = () => {
     handleGoogleLogin().then(() => {
       toast.success("Google login successful");
+      navigate("/");
     });
   };
 
@@ -44,6 +45,7 @@ function Login() {
   const githubLogin = () => {
     handleGithubLogin().then(() => {
       toast.success("Github login successful");
+      navigate("/");
     });
   };
   return (
