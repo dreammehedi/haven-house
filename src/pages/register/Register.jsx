@@ -1,6 +1,7 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,6 +9,9 @@ import { AuthContext } from "../../auth/AuthProvider";
 import Button from "../../shareComponents/Button";
 
 function Register() {
+  // password show and hide
+  const [showPass, setShowPass] = useState(false);
+
   // user visit location find
   const location = useLocation();
 
@@ -119,14 +123,24 @@ function Register() {
               <label htmlFor="password" className="block font-semibold">
                 Password
               </label>
-              <input
-                {...register("password")}
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Enter Your Password..."
-                className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
-              />
+              <div className="relative">
+                <input
+                  {...register("password")}
+                  type={showPass ? "text" : "password"}
+                  name="password"
+                  id="password"
+                  placeholder="Enter Your Password..."
+                  className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
+                />
+                <div
+                  className="text-2xl text-gray-400 absolute right-5 top-1/2 -translate-y-1/2 cursor-pointer"
+                  onClick={() => {
+                    setShowPass(!showPass);
+                  }}
+                >
+                  {showPass ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+                </div>
+              </div>
             </div>
             <Button type="submit" cls={"!mx-auto"} name="Register"></Button>
           </form>
