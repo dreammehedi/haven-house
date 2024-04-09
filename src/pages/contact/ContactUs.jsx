@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import ContactForm from "../../components/contact/ContactForm";
 import ContactInfo from "../../components/contact/ContactInfo";
 import ContactMap from "../../components/contact/ContactMap";
@@ -6,6 +7,9 @@ import SectionTitle from "../../shareComponents/SectionTitle";
 function ContactUs() {
   return (
     <>
+      <Helmet>
+        <title>Haven House | Contact Us</title>
+      </Helmet>
       {/* contact address */}
       <section className="my-6 md:my-8 lg:my-10">
         <SectionTitle
