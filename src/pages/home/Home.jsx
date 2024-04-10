@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { BsHouseCheckFill } from "react-icons/bs";
 import { FaTengeSign } from "react-icons/fa6";
-import { GiBlockHouse } from "react-icons/gi";
+import { GiBlockHouse, GiHouseKeys, GiSpookyHouse } from "react-icons/gi";
 import { PiListChecksFill } from "react-icons/pi";
 import Estate from "../../components/estate/Estate";
 import Banner from "../../components/hero/Banner";
@@ -38,11 +38,14 @@ function Home() {
           <Service name=" Property Listing">
             <PiListChecksFill className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></PiListChecksFill>
           </Service>
-          <Service name="Saling Services">
-            <BsHouseCheckFill className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></BsHouseCheckFill>
+          <Service name="House Services">
+            <GiSpookyHouse className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></GiSpookyHouse>
           </Service>
           <Service name="Property Management">
             <GiBlockHouse className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></GiBlockHouse>
+          </Service>
+          <Service name="House Keys">
+            <GiHouseKeys className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></GiHouseKeys>
           </Service>
         </div>
       </section>

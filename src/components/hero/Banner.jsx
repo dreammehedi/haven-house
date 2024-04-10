@@ -25,7 +25,7 @@ function Banner() {
         pagination={{
           clickable: true,
         }}
-        className="mySwiper h-[400px] md:h-[450px] lg:h-bannerHeight lg:min-h-[450px] rounded-3xl"
+        className="mySwiper h-[420px] md:h-[450px] lg:h-bannerHeight lg:min-h-[450px] rounded-3xl"
       >
         <SwiperSlide>
           <HeroSlider

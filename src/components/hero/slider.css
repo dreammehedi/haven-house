@@ -1,5 +1,11 @@
 .swiper-pagination-bullet {
   background-color: #22c55e;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+}
+@media screen and (max-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+  }
 }

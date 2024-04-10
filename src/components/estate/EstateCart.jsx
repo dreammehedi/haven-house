@@ -17,7 +17,7 @@ function EstateCart({ estate }) {
     bathrooms,
   } = estate;
   return (
-    <div className="border border-gray-50 shadow-md rounded-xl overflow-hidden">
+    <div className="border border-gray-50 shadow-md rounded-xl overflow-hidden transition-all duration-300 ease-linear hover:scale-[1.01]">
       {/* estate img */}
       <figure className="relative overflow-hidden cursor-pointer">
         <img
@@ -55,7 +55,7 @@ function EstateCart({ estate }) {
           <span className="font-semibold text-lg text-gray-700 font-lato capitalize">
             {segment_name}
           </span>
-          <h4 className="font-semibold text-sm font-nunito bg-green-500/50 px-3 py-2 rounded-full text-white cursor-pointer">
+          <h4 className="font-semibold text-sm font-nunito bg-green-500/80 px-3 py-2 rounded-full text-white cursor-pointer">
             Price: {price}
           </h4>
         </div>
