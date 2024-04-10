@@ -1,19 +1,30 @@
-import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import { toast } from "react-toastify";
 import Button from "../../shareComponents/Button";
 import SectionTitle from "../../shareComponents/SectionTitle";
-
 function ContactForm() {
-  const { register, handleSubmit } = useForm();
+  const form = useRef();
 
-  const handleContactInfo = (data) => {
-    const { firstName, number, lastName, message, gender, birth, email } = data;
-    console.log(firstName);
-    console.log(lastName);
-    console.log(email);
-    console.log(number);
-    console.log(birth);
-    console.log(gender);
-    console.log(message);
+  const serviceId = import.meta.env.VITE_SERVICE_ID;
+  const templateId = import.meta.env.VITE_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
+      })
+      .then(
+        () => {
+          toast.success("Your message has been sent!");
+          form.current.reset();
+        },
+        () => {
+          toast.error("An error has occurred!");
+        }
+      );
   };
 
   return (
@@ -26,14 +37,15 @@ function ContactForm() {
       ></SectionTitle>
 
       <form
-        onSubmit={handleSubmit(handleContactInfo)}
+        ref={form}
+        onSubmit={sendEmail}
         className="flex flex-col space-y-6 w-full md:max-w-3xl mx-auto bg-white/80 p-4 text-center md:p-8 lg:p-10 rounded-3xl font-poppins"
       >
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-8">
           Provide Your Full Information
         </h1>
         <input
-          {...register("firstName", { required: true })}
+          required
           type="text"
           name="firstName"
           id="firstName"
@@ -41,7 +53,7 @@ function ContactForm() {
           className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500/50"
         />
         <input
-          {...register("lastName")}
+          required
           type="text"
           name="lastName"
           id="lastName"
@@ -49,7 +61,7 @@ function ContactForm() {
           className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500/50"
         />
         <input
-          {...register("email", { required: true })}
+          required
           type="email"
           name="email"
           id="email"
@@ -57,7 +69,7 @@ function ContactForm() {
           className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
         />
         <input
-          {...register("number", { required: true })}
+          required
           type="number"
           name="number"
           id="number"
@@ -65,7 +77,7 @@ function ContactForm() {
           className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
         />
         <input
-          {...register("birth")}
+          required
           type="date"
           name="birth"
           id="birth"
@@ -73,24 +85,12 @@ function ContactForm() {
         />
         <div className="flex gap-1 w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50  focus:text-gray-800 text-gray-400 outline-none focus:ring-1 focus:ring-green-500">
           <label htmlFor="male">Male</label>
-          <input
-            {...register("gender")}
-            type="radio"
-            name="gender"
-            id="male"
-            value="male"
-          />
+          <input type="radio" name="gender" id="male" value="male" />
           <label htmlFor="female">Female</label>
-          <input
-            {...register("gender")}
-            type="radio"
-            name="gender"
-            id="female"
-            value="female"
-          />
+          <input type="radio" name="gender" id="female" value="female" />
         </div>
         <textarea
-          {...register("message")}
+          required
           className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
           name="message"
           id="message"
