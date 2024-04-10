@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import ClickToTop from "../components/clicktop/ClickToTop";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/header/Navbar";
 
@@ -12,6 +13,7 @@ function Root() {
       </header>
       <Outlet></Outlet>
       <Footer></Footer>
+      <ClickToTop></ClickToTop>
     </>
   );
 }
