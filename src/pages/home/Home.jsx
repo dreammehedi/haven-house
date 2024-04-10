@@ -28,23 +28,23 @@ function Home() {
         ></SectionTitle>
         {/* our service items */}
         <div className="container my-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between gap-8 md:gap-10">
-          <Service name=" Renting Services">
+          <Service delay={1} name=" Renting Services">
             <FaTengeSign className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></FaTengeSign>
           </Service>
-          <Service name="Saling Services">
+          <Service delay={2} name="Saling Services">
             <BsHouseCheckFill className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></BsHouseCheckFill>
           </Service>
 
-          <Service name=" Property Listing">
+          <Service delay={3} name=" Property Listing">
             <PiListChecksFill className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></PiListChecksFill>
           </Service>
-          <Service name="House Services">
+          <Service delay={4} name="House Services">
             <GiSpookyHouse className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></GiSpookyHouse>
           </Service>
-          <Service name="Property Management">
+          <Service delay={5} name="Property Management">
             <GiBlockHouse className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></GiBlockHouse>
           </Service>
-          <Service name="House Keys">
+          <Service delay={6} name="House Keys">
             <GiHouseKeys className="text-4xl md:text-5xl lg:text-[4rem] text-green-500 font-bold "></GiHouseKeys>
           </Service>
         </div>
@@ -63,14 +63,7 @@ function Home() {
       </section>
 
       {/* testimonial */}
-      <section className="mt-6 md:mt-8 lg:mt-10 bg-green-50 py-8 md:py-10">
-        {/* testimonial title and description */}
-        <SectionTitle
-          title={"See What Our Clients Have to Say"}
-          description={`Welcome to our testimonials section, where we offer a comprehensive range of solutions tailored to meet your needs. From consultation to execution, our dedicated team is here to provide expertise and support every step of the way.`}
-        ></SectionTitle>
-
-        {/* testimonial slider */}
+      <section className=" bg-green-50 py-8 md:py-10">
         <div className="container">
           <Testimonials></Testimonials>
         </div>

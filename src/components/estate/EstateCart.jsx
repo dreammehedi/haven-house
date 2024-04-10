@@ -17,7 +17,12 @@ function EstateCart({ estate }) {
     bathrooms,
   } = estate;
   return (
-    <div className="border border-gray-50 shadow-md rounded-xl overflow-hidden transition-all duration-300 ease-linear hover:scale-[1.01]">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+      data-aos-duration={400 * id}
+      className="border border-gray-50 shadow-md rounded-xl overflow-hidden transition-all duration-300 ease-linear hover:scale-[1.01]"
+    >
       {/* estate img */}
       <figure className="relative overflow-hidden cursor-pointer">
         <img

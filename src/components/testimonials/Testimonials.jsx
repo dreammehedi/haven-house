@@ -10,6 +10,7 @@ import "swiper/css";
 // import required modules
 import { Autoplay } from "swiper/modules";
 import Loader from "../../shareComponents/Loader";
+import SectionTitle from "../../shareComponents/SectionTitle";
 
 function Testimonials() {
   // testimonial data calling
@@ -37,6 +38,12 @@ function Testimonials() {
 
   return (
     <>
+      {/* testimonial title and description */}
+      <SectionTitle
+        title={"See What Our Clients Have to Say"}
+        description={`Welcome to our testimonials section, where we offer a comprehensive range of solutions tailored to meet your needs. From consultation to execution, our dedicated team is here to provide expertise and support every step of the way.`}
+      ></SectionTitle>
+      {/* testimonial slider */}
       <Swiper
         spaceBetween={30}
         autoplay={{

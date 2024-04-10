@@ -42,13 +42,15 @@ function Estate() {
           );
         })}
       </div>
-      {estates.length > sliceEstates ? (
-        <Button
-          onClick={handleSlice}
-          cls={"mt-8 flex justify-center text-center mx-auto"}
-          name="All Residential"
-        ></Button>
-      ) : null}
+      <div data-aos="zoom-in">
+        {estates.length > sliceEstates ? (
+          <Button
+            onClick={handleSlice}
+            cls={"mt-8 flex justify-center text-center mx-auto"}
+            name="All Residential"
+          ></Button>
+        ) : null}
+      </div>
     </>
   );
 }

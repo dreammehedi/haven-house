@@ -3,7 +3,11 @@ function TestimonialClient({ client }) {
   const { id, author, position, company, testimonial, authorImg } = client;
 
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-[500px] p-6 space-y-8 shadow-md lg:p-8 bg-gray-50 rounded-3xl transition-all duration-300 ease-linear hover:scale-[1.01]">
+    <div
+      data-aos={id % 2 ? "flip-left" : "flip-right"}
+      data-aos-duration="1000"
+      className="flex flex-col items-center justify-center w-full min-h-[500px] p-6 space-y-8 shadow-md lg:p-8 bg-gray-50 rounded-3xl transition-all duration-300 ease-linear hover:scale-[1.01]"
+    >
       <img
         src={authorImg}
         alt={`client ${id}`}
