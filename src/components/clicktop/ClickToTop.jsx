@@ -32,7 +32,7 @@ function ClickToTop() {
       {showTop && (
         <div
           onClick={handleTop}
-          className="fixed bottom-10 right-[50px] text-white rounded-md  bg-green-500/50 p-4 cursor-pointer transition-all duration-300 ease-linear hover:bg-green-500 z-[99999]"
+          className="animate-bounce fixed bottom-10 right-[50px] text-white rounded-md  bg-green-500/50 p-4 cursor-pointer transition-all duration-300 ease-linear hover:bg-green-500 z-[99999]"
         >
           <FaArrowUp className="text-xl"></FaArrowUp>
         </div>
