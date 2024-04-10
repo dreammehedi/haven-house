@@ -1,9 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import MenuItems from "./MenuItems";
 import UserProfile from "./UserProfile";
 
 function Navbar() {
+  // sticky navbar
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const stickyNav = () => {
+      if (window.scrollY > 300) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", stickyNav);
+
+    return () => {
+      window.removeEventListener("scroll", stickyNav);
+    };
+  }, []);
+
   // mobile menu active
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
   const handleMenuActive = () => {
@@ -11,7 +30,11 @@ function Navbar() {
   };
 
   return (
-    <div className={`bg-white  w-full transition-all duration-300 ease-linear`}>
+    <div
+      className={`${
+        sticky && "sticky top-0 z-[9999] shadow-md"
+      } bg-white w-full transition-all duration-300 ease-linear`}
+    >
       <nav className="container flex justify-between items-center py-3">
         <Logo></Logo>
 

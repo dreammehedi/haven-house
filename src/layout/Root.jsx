@@ -4,13 +4,14 @@ import ClickToTop from "../components/clicktop/ClickToTop";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/header/Navbar";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 function Root() {
   return (
     <>
       <ToastContainer></ToastContainer>
-      <header className="sticky top-0 z-[9999]">
-        <Navbar></Navbar>
-      </header>
+      <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>
       <ClickToTop></ClickToTop>
