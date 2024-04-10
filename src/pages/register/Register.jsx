@@ -73,7 +73,7 @@ function Register() {
         <title>Haven House | Register</title>
       </Helmet>
 
-      <section className="container">
+      <section data-aos="fade-left" data-aos-delay="300" className="container">
         <div className="container ring-1 ring-green-500/50 w-full md:max-w-md mx-auto p-8 space-y-3 rounded-3xl bg-white shadow-md my-8">
           <h1 className="text-2xl md:text-3xl font-semibold font-poppins text-center">
             Register

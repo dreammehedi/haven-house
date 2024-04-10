@@ -38,7 +38,7 @@ function UpdateProfile() {
         <title>Haven House | Update Profile</title>
       </Helmet>
 
-      <section className="container">
+      <section data-aos="fade-up" data-aos-delay="300" className="container">
         <div className="container ring-1 ring-green-500/50 w-full md:max-w-md mx-auto p-8 space-y-3 rounded-3xl bg-white shadow-md my-8">
           <h1 className="text-2xl md:text-3xl font-semibold font-poppins text-center">
             Update Profile
