@@ -69,10 +69,9 @@ function ContactForm() {
           type="date"
           name="birth"
           id="birth"
-          placeholder="Enter Your BirthDay..."
-          className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
+          className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-400 outline-none focus:ring-1 focus:ring-green-500"
         />
-        <div className="flex gap-1 w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500">
+        <div className="flex gap-1 w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50  focus:text-gray-800 text-gray-400 outline-none focus:ring-1 focus:ring-green-500">
           <label htmlFor="male">Male</label>
           <input
             {...register("gender")}
@@ -92,7 +91,7 @@ function ContactForm() {
         </div>
         <textarea
           {...register("message")}
-          className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
+          className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800 focus:text-gray-800 outline-none focus:ring-1 focus:ring-green-500"
           name="message"
           id="message"
           cols="30"
