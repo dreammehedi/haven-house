@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { useLocation } from "react-router-dom";
@@ -16,12 +16,7 @@ function UpdateProfile() {
   const { userInfo, updateUserProfile } = useContext(AuthContext);
 
   // handle form with hook
-  const { register, handleSubmit, setFocus } = useForm();
-
-  // focus field
-  useEffect(() => {
-    setFocus("userName");
-  }, [setFocus]);
+  const { register, handleSubmit } = useForm();
 
   // handle submit form
   const onSubmit = (data) => {
