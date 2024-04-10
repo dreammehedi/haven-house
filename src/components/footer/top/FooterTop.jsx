@@ -78,9 +78,9 @@ const serviceData = [
 
 function FooterTop() {
   return (
-    <div className="container pt-8 mb-4 mb:mb-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between gap-6 md:gap-8 lg:gap-10 pb-8 border-b border-gray-300">
+    <div className="container pt-8 mb-4 mb:mb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center md:items-start text-center md:justify-between gap-6 md:gap-8 lg:gap-10 pb-8 border-b border-gray-300">
       {/* main title & logo */}
-      <div className="space-y-3 pb-4 md:border-0 border-b border-gray-300">
+      <div className="space-y-3 pb-4 lg:border-0 border-b border-gray-300">
         <Logo></Logo>
 
         <p className="text-gray-400">
@@ -92,10 +92,8 @@ function FooterTop() {
       </div>
 
       {/* service */}
-      <div className="space-y-3 pb-4 md:border-0 border-b border-gray-300">
-        <h2 className=" text-xl md:text-2xl font-semibold text-gray-800">
-          Service
-        </h2>
+      <div className="space-y-3 pb-4 lg:border-0 border-b border-gray-300">
+        <h2 className=" text-2xl font-semibold text-gray-800">Service</h2>
         <ul className="flex flex-col gap-4">
           {serviceData.map((service) => {
             const { id, name, path } = service;
@@ -119,10 +117,8 @@ function FooterTop() {
       </div>
 
       {/* navigation */}
-      <div className="space-y-3">
-        <h2 className=" text-xl md:text-2xl font-semibold text-gray-800">
-          Navigation
-        </h2>
+      <div className="space-y-3  pb-4 md:border-0 border-b border-gray-300">
+        <h2 className=" text-2xl font-semibold text-gray-800">Navigation</h2>
         <ul className="flex flex-col gap-4">
           {footerLink.map((menu) => {
             const { id, name, path } = menu;
@@ -147,9 +143,7 @@ function FooterTop() {
 
       {/* contact us */}
       <div className="space-y-3">
-        <h2 className=" text-xl md:text-2xl font-semibold text-gray-800">
-          Contact Us
-        </h2>
+        <h2 className=" text-2xl font-semibold text-gray-800">Contact Us</h2>
         <ul className="space-y-2">
           <li className="font-medium text-gray-400 text-wrap break-words">
             <p className="text-gray-800 font-bold">Email:</p>
