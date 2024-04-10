@@ -1,11 +1,17 @@
 import { useContext, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
+import { useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../auth/AuthProvider";
+import usePageBackground from "../../hook/usePageBackgroun";
 import Button from "../../shareComponents/Button";
 
 function UpdateProfile() {
+  // update profile page background color change
+  const { pathname } = useLocation();
+  usePageBackground("bg-green-50", pathname);
+
   // handle create user with email and password
   const { userInfo, updateUserProfile } = useContext(AuthContext);
 

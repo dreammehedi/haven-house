@@ -4,8 +4,13 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../auth/AuthProvider";
+import usePageBackground from "../../hook/usePageBackgroun";
 import Button from "../../shareComponents/Button";
 function Login() {
+  // login page background color change
+  const { pathname } = useLocation();
+  usePageBackground("bg-green-50", pathname);
+
   // user visit location find
   const location = useLocation();
 
