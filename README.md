@@ -1,7 +1,7 @@
-# Haven House
+# Haven House Live Link
 
-[Haven House Firebase](https://haven-house-c40d3.web.app/)
-[Haven House Surge](https://haven-house.surge.sh/)
+- [Haven House Firebase](https://haven-house-c40d3.web.app/)
+- [Haven House Surge](https://haven-house.surge.sh/)
 
 ## Features and Characteristics
 
@@ -27,7 +27,9 @@ Others npm package used for this website :
 - [`React Hook Form`](https://react-hook-form.com/)
 - [`React Icons`](https://www.npmjs.com/package/react-icons)
 - [`React Loader Spinner`](https://www.npmjs.com/package/react-loader-spinner)
-- [`React Toastify`](https://www.npmjs.com/package/react-toastify)
+- [`daisyUi `](https://daisyui.com/)
+- [`AOS`](https://michalsnik.github.io/aos/)
+- [`@emailjs/browser`](https://www.emailjs.com/)
 
 ## Welcome to Haven House: A Sanctuary for Hope
 
