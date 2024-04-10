@@ -39,9 +39,9 @@ function Testimonials() {
     <>
       <Swiper
         spaceBetween={30}
-        // autoplay={{
-        //   delay: 3000,
-        // }}
+        autoplay={{
+          delay: 3000,
+        }}
         breakpoints={{
           640: {
             slidesPerView: 1,
