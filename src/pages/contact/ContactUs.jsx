@@ -27,7 +27,7 @@ function ContactUs() {
       </section>
 
       {/* contact location map */}
-      <section>
+      <section data-aos="zoom-in" data-aos-duration="1000">
         <ContactMap></ContactMap>
       </section>
     </>

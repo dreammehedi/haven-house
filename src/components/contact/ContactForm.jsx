@@ -37,6 +37,8 @@ function ContactForm() {
       ></SectionTitle>
 
       <form
+        data-aos="zoom-in"
+        data-aos-duration="1000"
         ref={form}
         onSubmit={sendEmail}
         className="flex flex-col space-y-6 w-full md:max-w-3xl mx-auto bg-white/80 p-4 text-center md:p-8 lg:p-10 rounded-3xl font-poppins"
