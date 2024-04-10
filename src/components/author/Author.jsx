@@ -3,33 +3,55 @@ import author from "../../assets/author.jpg";
 function Author() {
   return (
     <div className="space-y-6 md:space-y-8 mt-8">
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold font-lato">
+      <h1
+        data-aos="fade-up"
+        data-aos-delay={100}
+        className="text-xl md:text-2xl lg:text-3xl font-semibold font-lato"
+      >
         Author
       </h1>
       <div
         className="flex flex-col space-y-2 justify-center items-center 
     text-center"
       >
-        <figure>
+        <figure data-aos="fade-up" data-aos-delay={150}>
           <img
             className="rounded-full object-cover w-[200px] h-[200px]"
             src={author}
             alt="Mehedi"
           />
         </figure>
-        <h2 className="font-extrabold text-xl font-lato">
+        <h2
+          data-aos="fade-up"
+          data-aos-delay={200}
+          className="font-extrabold text-xl font-lato"
+        >
           Mehedi Hassan Miraj
         </h2>
-        <span className="text-gray-800 font-medium text-sm">
+        <span
+          data-aos="fade-up"
+          data-aos-delay={250}
+          className="text-gray-800 font-medium text-sm"
+        >
           dreammehedihassan@gmail.com
         </span>
-        <h3 className="text-gray-700 font-medium">Front End Developer</h3>
-        <p className="text-gray-400">
+        <h3
+          data-aos="fade-up"
+          data-aos-delay={300}
+          className="text-gray-700 font-medium"
+        >
+          Front End Developer
+        </h3>
+        <p data-aos="fade-up" data-aos-delay={350} className="text-gray-400">
           As a frontend developer, you have an exciting journey ahead, working
           on user interfaces and creating engaging experiences for users.
         </p>
-        <div className="flex items-center">
-          <span>
+        <div
+          data-aos="fade-up-right"
+          data-aos-delay="100"
+          className="flex items-center"
+        >
+          <span data-aos="fade-up-right" data-aos-delay="100">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -43,7 +65,7 @@ function Author() {
               ></path>
             </svg>
           </span>
-          <span>
+          <span data-aos="fade-up-right" data-aos-delay="150">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -57,7 +79,7 @@ function Author() {
               ></path>
             </svg>
           </span>
-          <span>
+          <span data-aos="fade-up-right" data-aos-delay="200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -71,7 +93,7 @@ function Author() {
               ></path>
             </svg>
           </span>
-          <span>
+          <span data-aos="fade-up-right" data-aos-delay="250">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -85,7 +107,7 @@ function Author() {
               ></path>
             </svg>
           </span>
-          <span>
+          <span data-aos="fade-up-right" data-aos-delay="300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -102,7 +124,7 @@ function Author() {
             </svg>
           </span>
         </div>
-        <Link to="/contactus">
+        <Link data-aos="fade-up" data-aos-delay="400" to="/contactus">
           <button className="px-3 py-2 rounded-full font-semibold text-[18px] bg-green-500/50 my-4 text-white transition-all duration-300 ease-linear hover:bg-green-500">
             Contact Us
           </button>

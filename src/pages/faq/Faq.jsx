@@ -19,10 +19,20 @@ function Faq() {
           ></SectionTitle>
 
           <div className="mt-6 md:mt-8 lg:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-10">
-            <div className="lg:col-span-8 border border-gray-50 shadow-md rounded-xl overflow-hidden p-4 h-fit">
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
+              className="lg:col-span-8 border border-gray-50 shadow-md rounded-xl overflow-hidden p-4 h-fit"
+            >
               <Accordion></Accordion>
             </div>
-            <div className="lg:col-span-4 border border-gray-50 shadow-md rounded-xl overflow-hidden p-4 h-fit text-center">
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
+              className="lg:col-span-4 border border-gray-50 shadow-md rounded-xl overflow-hidden p-4 h-fit text-center"
+            >
               <Author></Author>
             </div>
           </div>

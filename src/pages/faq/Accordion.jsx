@@ -69,6 +69,8 @@ function Accordion() {
         const { id, question, answer } = accordion;
         return (
           <div
+            data-aos="fade-up"
+            data-aos-delay={100 * id}
             key={id}
             className={`${
               id === frequentlyAskData.length ? "border-b-0" : ""
