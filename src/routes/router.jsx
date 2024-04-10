@@ -3,12 +3,13 @@ import Root from "../layout/Root";
 import ContactUs from "../pages/contact/ContactUs";
 import Error from "../pages/error/Error";
 import EstateDetailes from "../pages/estateDetailes/EstateDetailes";
+
+import Faq from "../pages/faq/Faq";
 import Home from "../pages/home/Home";
 import Login from "../pages/login/Login";
 import UpdateProfile from "../pages/profile/UpdateProfile";
 import Register from "../pages/register/Register";
 import PrivateRoute from "../privateroute/PrivateRoute";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
             <ContactUs></ContactUs>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/faq",
+        element: <Faq></Faq>,
       },
     ],
   },

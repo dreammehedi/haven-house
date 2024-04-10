@@ -5,6 +5,7 @@ import { AuthContext } from "../../auth/AuthProvider";
 const menuContent = [
   { id: 1, name: "Home", path: "/" },
   { id: 2, name: "Contact Us", path: "/contactus" },
+  { id: 3, name: "FAQ", path: "/faq" },
 ];
 
 function MenuItems({ handleMenuActive }) {
