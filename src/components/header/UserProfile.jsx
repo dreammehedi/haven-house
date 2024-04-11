@@ -22,11 +22,11 @@ function UserProfile({ mobileMenuActive, handleMenuActive }) {
         {userInfo && (
           <figure className="relative group">
             <img
-              className="w-[40px] md:w-[50px] rounded-full object-cover cursor-pointer transition-all duration-300 ease-linear"
+              className="ring ring-green-500/50 w-[40px] md:w-[50px] rounded-full object-cover cursor-pointer transition-all duration-300 ease-linear"
               src={userInfo?.photoURL || userIcon}
               alt="userIcon"
             />
-            <h4 className="absolute z-[99] group-hover:inline-block hidden -bottom-8 bg-green-500/50 max-w-[250px] min-w-[200px] left-1/2 -translate-x-1/2 rounded-3xl text-center text-slate-600 py-1 font-bold font-poppins text-sm transition-all duration-300 ease-linear  group-hover:opacity-100">
+            <h4 className="absolute z-[99] group-hover:inline-block top-1/2 right-[50px] hidden bg-green-500/50 max-w-[250px] min-w-[200px] -translate-y-1/2 rounded-3xl text-center text-slate-600 py-1 font-bold font-poppins text-sm transition-all duration-300 ease-linear  group-hover:opacity-100">
               {userInfo?.displayName || userInfo?.email}
             </h4>
           </figure>
