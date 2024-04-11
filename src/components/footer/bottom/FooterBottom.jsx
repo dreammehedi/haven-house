@@ -31,7 +31,7 @@ function FooterBottom() {
       </div>
       <div
         id="footer-bottom"
-        className="bg-green-500 size-4 absolute -top-[80px] right-0"
+        className="bg-transparent size-4 absolute opacity-0 -top-[80px] right-0"
       ></div>
     </div>
   );

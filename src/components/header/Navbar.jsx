@@ -31,12 +31,15 @@ function Navbar() {
 
   return (
     <div
+      data-aos-anchor="#navbar-bottom"
       className={`${
         sticky && "sticky top-0 z-[9999] shadow-md"
-      } bg-white w-full transition-all duration-300 ease-linear`}
+      }  bg-white w-full transition-all duration-300 ease-linear `}
     >
-      <nav className="container flex justify-between items-center py-3">
-        <Logo></Logo>
+      <nav className="container flex justify-between items-center py-3 relative">
+        <div data-aos="fade-left" data-aos-anchor="#navbar-bottom">
+          <Logo></Logo>
+        </div>
 
         {/* mobile & tablet menu */}
         <ul
@@ -50,7 +53,7 @@ function Navbar() {
         {/* desktop menu */}
         <ul
           data-aos="zoom-in-up"
-          data-aos-duration="600"
+          data-aos-anchor="#navbar-bottom"
           className="hidden lg:flex justify-center items-center gap-6 md:gap-8 font-lato"
         >
           <MenuItems></MenuItems>
@@ -59,6 +62,11 @@ function Navbar() {
           mobileMenuActive={mobileMenuActive}
           handleMenuActive={handleMenuActive}
         ></UserProfile>
+
+        <div
+          id="navbar-bottom"
+          className="bg-transparent opacity-0 size-5 fixed bottom-[300px] right-0"
+        ></div>
       </nav>
     </div>
   );

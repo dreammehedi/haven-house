@@ -81,9 +81,11 @@ function FooterTop() {
     <div className="container pt-8 mb-4 mb:mb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center md:items-start text-center md:justify-between gap-6 md:gap-8 md:text-left lg:gap-10 pb-8 border-b border-gray-300 overflow-x-hidden">
       {/* main title & logo */}
       <div className="space-y-3 pb-4 lg:border-0 border-b border-gray-300">
-        <Logo></Logo>
+        <div data-aos="fade-left" data-aos-delay="400">
+          <Logo></Logo>
+        </div>
 
-        <p data-aos="fade-up" data-aos-delay="500" className="text-gray-400">
+        <p data-aos="fade-left" data-aos-delay="500" className="text-gray-400">
           At Haven House, we believe in providing sanctuary, support, and hope
           to those in need. Founded in 2024, we have been dedicated to serving
           our community and offering a safe haven for individuals and families

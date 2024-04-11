@@ -15,7 +15,7 @@ function UserProfile({ mobileMenuActive, handleMenuActive }) {
     <>
       <div
         data-aos="fade-right"
-        data-aos-delay="400"
+        data-aos-anchor="#navbar-bottom"
         className="relative flex justify-between gap-4 md:gap-6 items-center"
       >
         {/* user informtaion after login */}
