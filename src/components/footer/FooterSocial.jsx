@@ -3,7 +3,9 @@ function FooterSocial() {
   return (
     <div className="flex justify-center space-x-4">
       <a
-        rel="noopener noreferrer"
+        data-aos="fade-left"
+        data-aos-delay="1000"
+        data-aos-anchor="#footer-bottom"
         href="https://www.facebook.com/profile.php?id=61554869056271"
         target="_blank"
         title="Facebook"
@@ -12,7 +14,9 @@ function FooterSocial() {
         <FaFacebook></FaFacebook>
       </a>
       <a
-        rel="noopener noreferrer"
+        data-aos="fade-left"
+        data-aos-delay="800"
+        data-aos-anchor="#footer-bottom"
         href="https://github.com/dreammehedi"
         target="_blank"
         title="Github"
@@ -21,7 +25,9 @@ function FooterSocial() {
         <FaGithub></FaGithub>
       </a>
       <a
-        rel="noopener noreferrer"
+        data-aos="fade-left"
+        data-aos-delay="600"
+        data-aos-anchor="#footer-bottom"
         href="https://www.instagram.com/"
         target="_blank"
         title="Instagram"
@@ -30,7 +36,9 @@ function FooterSocial() {
         <FaInstagram></FaInstagram>
       </a>
       <a
-        rel="noopener noreferrer"
+        data-aos="fade-left"
+        data-aos-delay="400"
+        data-aos-anchor="#footer-bottom"
         href="https://twitter.com/"
         target="_blank"
         title="Twitter"
