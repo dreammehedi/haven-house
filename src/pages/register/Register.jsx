@@ -37,7 +37,6 @@ function Register() {
     const { userName, email, photoUrl, password } = data;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
 
-    console.log(userName, photoUrl);
     if (!userName || !email || !password || !photoUrl) {
       toast.error("Please fill all the fields!");
       return;

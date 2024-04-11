@@ -48,7 +48,11 @@ function Navbar() {
         </ul>
 
         {/* desktop menu */}
-        <ul className="hidden lg:flex justify-center items-center gap-6 md:gap-8 font-lato">
+        <ul
+          data-aos="zoom-in-up"
+          data-aos-duration="600"
+          className="hidden lg:flex justify-center items-center gap-6 md:gap-8 font-lato"
+        >
           <MenuItems></MenuItems>
         </ul>
         <UserProfile
