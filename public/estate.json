@@ -29,7 +29,8 @@
         "Internet",
         "Parking",
         "lift"
-      ]
+      ],
+      "delay": 300
     },
     {
       "id": 2,
@@ -52,7 +53,8 @@
       "kitchen": 1,
       "garage": 1,
       "living_room": 1,
-      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"]
+      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"],
+      "delay": 400
     },
     {
       "id": 3,
@@ -82,7 +84,8 @@
         "Cable TV",
         "Internet",
         "Parking"
-      ]
+      ],
+      "delay": 500
     },
     {
       "id": 4,
@@ -101,7 +104,8 @@
       "kitchen": 1,
       "garage": 0,
       "living_room": 1,
-      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"]
+      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"],
+      "delay": 600
     },
     {
       "id": 5,
@@ -132,7 +136,8 @@
         "Internet",
         "Parking",
         "Pool"
-      ]
+      ],
+      "delay": 700
     },
     {
       "id": 6,
@@ -162,7 +167,8 @@
         "Cable TV",
         "Internet",
         "Parking"
-      ]
+      ],
+      "delay": 800
     },
     {
       "id": 7,
@@ -181,7 +187,8 @@
       "kitchen": 1,
       "garage": 0,
       "living_room": 1,
-      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"]
+      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"],
+      "delay": 900
     },
     {
       "id": 8,
@@ -212,7 +219,8 @@
         "Internet",
         "Parking",
         "Home Theater"
-      ]
+      ],
+      "delay": 1000
     },
     {
       "id": 9,
@@ -231,7 +239,8 @@
       "kitchen": 1,
       "garage": 1,
       "living_room": 1,
-      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"]
+      "amenities": ["Air Conditioning", "Bedding", "Internet", "Parking"],
+      "delay": 1100
     }
   ]
 }

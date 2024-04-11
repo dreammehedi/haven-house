@@ -10,8 +10,10 @@ a {
 }
 
 body[data-aos-duration="4000"] [data-aos],
-[data-aos][data-aos][data-aos-duration="4000"],
+[data-aos][data-aos][data-aos-duration="4000"] {
+  transition-duration: 4000ms;
+}
 body[data-aos-delay="4000"] [data-aos],
 [data-aos][data-aos][data-aos-delay="4000"] {
-  transition-duration: 4000ms;
+  transition-delay: 4000ms;
 }
